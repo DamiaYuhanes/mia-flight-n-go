@@ -851,14 +851,20 @@ input[type="range"] { flex: 1; accent-color: var(--primary); }
   .mobile-nav { display: block; }
 
   /* Hero */
-  .hero { padding: 28px 0 50px; }
-  .hero-title { font-size: 2rem; }
-  .hero-subtitle { font-size: .9rem; }
-  .search-card { border-radius: var(--radius); padding: 16px; }
-  .trip-tabs button { font-size: .85rem; padding: 8px 12px; }
-  .airport-search-input { font-size: 16px; } /* prevent zoom on iOS */
-  .date-input, .pax-input { font-size: 16px; }
-  .search-submit { height: 48px; font-size: 1rem; }
+  .hero { padding: 20px 0 30px; }
+  .hero-title { font-size: 1.8rem; }
+  .hero-subtitle { font-size: .88rem; margin-bottom: 16px; }
+  .search-card { border-radius: var(--radius); padding: 14px; box-shadow: var(--shadow-md); }
+  .trip-tab { font-size: .88rem; padding: 9px 0; }
+  .form-row { gap: 10px; }
+  .airport-search-input { font-size: 16px; height: 48px; }
+  .swap-btn { order: 2; align-self: center; width: 36px; height: 36px; font-size: 1rem; margin: 0 auto; }
+  .form-row:nth-child(3) { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .form-row:nth-child(3) .form-group:first-child { grid-column: 1 / -1; }
+  input[type="date"], select { font-size: 16px; height: 48px; }
+  .pax-control { height: 48px; }
+  .pax-btn { width: 38px; height: 38px; font-size: 1.2rem; }
+  .search-btn { height: 52px; font-size: 1rem; margin-top: 6px; }
 
   /* Compact search bar on results page */
   .search-bar-compact { padding: 8px 0; }

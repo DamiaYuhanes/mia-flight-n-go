@@ -818,5 +818,15 @@
   loadCurrency();
   applyPrices();
 
+  /* ── Mobile filter toggle ───────────────────────────────── */
+  const mobileFilterBtn = $('#mobile-filter-toggle');
+  const filtersSidebar  = $('#filters-sidebar');
+  if (mobileFilterBtn && filtersSidebar) {
+    mobileFilterBtn.addEventListener('click', () => {
+      const hidden = filtersSidebar.classList.toggle('mobile-hidden');
+      mobileFilterBtn.textContent = hidden ? '⚙️ Show Filters' : '⚙️ Hide Filters';
+    });
+  }
+
   console.log('✈ Mia Flight n Go ready');
 })();

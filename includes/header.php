@@ -60,3 +60,18 @@
     </div>
 </div>
 <div class="notif-overlay" id="notif-overlay" style="display:none"></div>
+
+<!-- Mobile Bottom Navigation -->
+<nav class="mobile-nav">
+    <div class="mobile-nav-inner">
+        <a href="<?= $base_path ?? '' ?>index.php" class="mobile-nav-btn <?= ($active_page??'')==='home'?'active':'' ?>">
+            <span class="nav-icon">🔍</span>Search
+        </a>
+        <a href="<?= $base_path ?? '' ?>price-tracker.php" class="mobile-nav-btn <?= ($active_page??'')==='tracker'?'active':'' ?>">
+            <span class="nav-icon">📈</span>Tracker
+        </a>
+        <a href="<?= $base_path ?? '' ?>watchlist.php" class="mobile-nav-btn <?= ($active_page??'')==='watchlist'?'active':'' ?>">
+            <span class="nav-icon">🔔</span>Watchlist
+        </a>
+    </div>
+</nav>

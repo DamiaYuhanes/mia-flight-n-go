@@ -133,7 +133,8 @@ window.CAL_SELECTED = '<?= $date ?>';
     <div class="container results-layout">
 
         <!-- Filters Sidebar -->
-        <aside class="filters-sidebar">
+        <button class="mobile-filter-toggle" id="mobile-filter-toggle">⚙️ Show Filters</button>
+        <aside class="filters-sidebar mobile-hidden" id="filters-sidebar">
             <form method="GET" action="search.php">
                 <input type="hidden" name="from"  value="<?= htmlspecialchars($from) ?>">
                 <input type="hidden" name="to"    value="<?= htmlspecialchars($to) ?>">

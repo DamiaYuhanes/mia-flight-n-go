@@ -823,8 +823,8 @@
   const filtersSidebar  = $('#filters-sidebar');
   if (mobileFilterBtn && filtersSidebar) {
     mobileFilterBtn.addEventListener('click', () => {
-      const hidden = filtersSidebar.classList.toggle('mobile-hidden');
-      mobileFilterBtn.textContent = hidden ? '⚙️ Show Filters' : '⚙️ Hide Filters';
+      const visible = filtersSidebar.classList.toggle('mobile-visible');
+      mobileFilterBtn.textContent = visible ? '⚙️ Hide Filters' : '⚙️ Show Filters';
     });
   }
 
